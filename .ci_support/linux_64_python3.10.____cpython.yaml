@@ -24,12 +24,10 @@ pyqt:
 - '5.15'
 python:
 - 3.10.* *_cpython
-qt_main:
-- '5.15'
+qt6_main:
+- '6.10'
 target_platform:
 - linux-64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - python
-  - channel_sources
