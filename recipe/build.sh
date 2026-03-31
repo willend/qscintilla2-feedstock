@@ -8,7 +8,7 @@ EXTRA_FLAGS=""
 export SIP_DIR="${PREFIX}/lib/python${PY_VER}/site-packages/PyQt6/bindings"
 export QMAKEFEATURES=${SRC_DIR}/src/features/
 
-QT_MAJOR_VER=$(qmake6 -v | sed -n 's/.*Qt version \([0-9])*\).*/\1/p')
+QT_MAJOR_VER=6 #$(qmake6 -v | sed -n 's/.*Qt version \([0-9])*\).*/\1/p')
 if [ -z "$QT_MAJOR_VER" ]; then
 	echo "Could not determine Qt version of string provided by qmake:"
 	echo $(qmake6 -v)
