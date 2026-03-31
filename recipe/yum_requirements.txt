@@ -7,7 +7,6 @@ libXt-devel
 libXtst-devel
 libXrender-devel
 libXext-devel
-libXdmcp-devel
 libXcomposite-devel
 libXcursor-devel
 libxcb-devel
@@ -16,6 +15,5 @@ libXi-devel
 libXScrnSaver-devel
 libXrandr-devel
 alsa-lib-devel
-xcb-util-devel
 xorg-x11-server-Xvfb
 pciutils-devel
