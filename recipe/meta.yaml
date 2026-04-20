@@ -46,7 +46,7 @@ requirements:
     - xorg-libxcomposite                        # [linux]
     - xorg-libxxf86vm                           # [linux]
     - xorg-xf86vidmodeproto                     # [linux]
-    - libgl                                               # [linux]
+    - libglvnd                                               # [linux]
   run:
     - python
     - pyqt6
