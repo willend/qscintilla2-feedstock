@@ -26,7 +26,7 @@ requirements:
     - python
     - pip
     - setuptools
-    - qt6-main =6.11                        # [build_platform == target_platform]
+    - qt6-main =6.11                        
     - pyqt6
     - pyqt-builder                              # [build_platform == target_platform]
     - sip                                       # [build_platform == target_platform]
