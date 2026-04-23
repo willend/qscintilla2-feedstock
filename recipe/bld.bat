@@ -15,7 +15,7 @@ set QT_MAJOR_VER=6
 :: Go to the source folder and enter the Qt5Qt6 dir
 cd %SRC_DIR%\src
 :: Use qmake to generate a make file
-%LIBRARY_BIN%\qmake6 qscintilla.pro
+%LIBRARY_BIN%\qmake qscintilla.pro
 if errorlevel 1 exit 1
 
 @echo Compiling
