@@ -21,12 +21,12 @@ requirements:
     - cross-python_{{ target_platform }}        # [build_platform != target_platform]
     - pyqt-builder                              # [build_platform != target_platform]
     - sip                                       # [build_platform != target_platform]
-    - qt6-main =6.11                            # [build_platform != target_platform]
+    - qt6-main >=6.11                           # [build_platform != target_platform]
   host:
     - python
     - pip
     - setuptools
-    - qt6-main =6.11                        
+    - qt6-main >=6.11
     - pyqt6
     - pyqt-builder                              # [build_platform == target_platform]
     - sip                                       # [build_platform == target_platform]
