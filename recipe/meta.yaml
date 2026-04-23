@@ -21,7 +21,7 @@ requirements:
     - cross-python_{{ target_platform }}        # [build_platform != target_platform]
     - pyqt-builder                              # [build_platform != target_platform]
     - sip                                       # [build_platform != target_platform]
-    - qt6-main =6.11                        # [build_platform != target_platform]
+    - qt6-main =6.11                            # [build_platform != target_platform]
   host:
     - python
     - pip
@@ -47,7 +47,7 @@ requirements:
     - xorg-libxcomposite                        # [linux]
     - xorg-libxxf86vm                           # [linux]
     - xorg-xf86vidmodeproto                     # [linux]
-    - libglvnd                     # [linux]
+    - libglvnd                                  # [linux]
   run:
     - python
     - pyqt6
