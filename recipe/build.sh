@@ -5,6 +5,8 @@ set -o pipefail
 SIP_COMMAND="sip-build"
 EXTRA_FLAGS=""
 
+export LDFLAGS="${LDFLAGS} -L/usr/lib64"
+
 export SIP_DIR="${PREFIX}/lib/python${PY_VER}/site-packages/PyQt6/bindings"
 export QMAKEFEATURES=${SRC_DIR}/src/features/
 
@@ -40,7 +42,7 @@ echo "==========================="
 # Go to Qscintilla source dir and then to its src folder.
 cd ${SRC_DIR}/src
 # Build the makefile with qmake
-qmake6 qscintilla.pro -spec ${BUILD_SPEC} -config release
+qmake6 QMAKE_LIBS_OPENGL='-lOpenGL' QMAKE_LFLAGS="$LDFLAGS" qscintilla.pro -spec ${BUILD_SPEC} -config release
 
 # Build Qscintilla
 make -j${CPU_COUNT} ${VERBOSE_AT}
@@ -49,7 +51,7 @@ echo "Installing QScintilla"
 make install
 
 cd ${SRC_DIR}/designer
-qmake6
+qmake6 QMAKE_INCDIR_OPENGL='/usr/include' QMAKE_LFLAGS="$LDFLAGS"  QMAKE_LIBS_OPENGL='-lOpenGL'
 make
 make install
 
