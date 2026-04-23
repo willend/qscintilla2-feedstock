@@ -86,6 +86,7 @@ $SIP_COMMAND \
     --qsci-include-dir ../src \
     --qsci-library-dir ../src \
     --api-dir ${PREFIX}/qsci/api/python \
+    --qmake "${PREFIX}/bin/qmake6" \
 $EXTRA_FLAGS
 
 #$PYTHON configure.py --pyqt=PyQt${QT_MAJOR_VER} --sip=$PREFIX/bin/sip --qsci-incdir=${PREFIX}/include/qt --qsci-libdir=${PREFIX}/lib --spec=${BUILD_SPEC} --no-qsci-api
